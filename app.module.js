@@ -2,5 +2,5 @@
 	'use strict';
 
 	angular
-		.module( 'app', [ 'app.config', 'app.data', 'app.home' ] );
+		.module( 'app', [ 'app.config', 'app.data', 'app.home', 'app.post' ] );
 })();
