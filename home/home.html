@@ -3,10 +3,10 @@
       ng-click="home.incrementUpvotes(post)"></span>
    	 {{post.upvotes}}
     <span style="font-size:20px; margin-left:10px;">
-      <a ng-show="post.link" href="{{post.link}}">
+      <a ng-show="post.id" ui-sref="post( { postId : post.id } )">
         {{post.title}}
       </a>
-      <span ng-hide="post.link">
+      <span ng-hide="post.id">
         {{post.title}}
       </span>
     </span>

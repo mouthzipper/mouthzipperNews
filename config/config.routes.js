@@ -7,14 +7,13 @@
 		    	templateUrl: '/home/home.html',
 		    	controller: 'HomeCtrl',
 		    	controllerAs: 'home'
-	    	},
-	    	.state('post', {
-		     	url: '/post/{id}',
+	    	})
+	    	.state( 'post', {
+		     	url: '/post/{postId}',
 		    	templateUrl: '/post/post.html',
 		    	controller: 'PostCtrl',
 		    	controllerAs: 'post'
-	    	}
-	    );
+	    	});
 
 	  	$urlRouterProvider.otherwise('home');
 	}

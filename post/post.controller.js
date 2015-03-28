@@ -1,18 +1,14 @@
 ( function () {
 	'use strict';
 
-	function PostCtrl() {
+	function PostCtrl( $stateParams) {
 		var self = this;
-
-		self.posts.push( {
-			title : self.title,
-			link : self.link,
-			upvotes : 0,
-			comments : [
+		self.title = 'dummy data',
+		self.id = 0,
+		self.comments = [
 				{ author: 'jerome', body : 'this is a body', upvotes: 0 },
 				{ author : 'jerome', body : 'this is !dbody', upvotes: 100 }
-			]
-		});
+		];
 	}
 
 	angular
