@@ -23,6 +23,7 @@
 	}
 
 	HomeCtrl.$inject = [ 'postService'];
+
 	angular.module( 'app.home' )
 	.controller( 'HomeCtrl', HomeCtrl );
 })();

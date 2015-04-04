@@ -4,12 +4,12 @@
 		$stateProvider
 	    	.state('home', {
 		     	url: '/home',
-		    	templateUrl: '/home/home.html',
+		    	templateUrl: '/javascripts/home/home.html',
 		    	controller: 'HomeCtrl',
 		    	controllerAs: 'home'
 	    	})
 	    	.state( 'post', {
-		     	url: '/post/{postId}',
+		     	url: '/javascripts/post/{postId}',
 		    	templateUrl: '/post/post.html',
 		    	controller: 'PostCtrl',
 		    	controllerAs: 'post'
