@@ -11,6 +11,7 @@ var users  = require('./routes/users');
 
 // require posts schema
 require( './models/Posts' );
+require( './models/Comments' );
 connect.mongoose( 'mongodb://localhost/mouthzipperNews' );
 var app = express();
 
